@@ -41,3 +41,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_SYSTEM_PROPERTY_BLACKLIST := \
     ro.product.device \
     ro.product.name
+
+# Maintainer
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.twrp.maintainer=Badmaneers (TG@Dumbdragon)
+    

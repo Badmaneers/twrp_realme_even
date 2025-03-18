@@ -199,7 +199,7 @@ TW_FRAMERATE := 60
 TW_OVERRIDE_SYSTEM_PROPS := \
     "ro.build.product"
 TW_INCLUDE_LIBRESETPROP := true
-
+TW_CUSTOM_BANNER := "Welcome to TWRP by Badmaneers!"
 # resetprop and magiskboot
 TW_INCLUDE_RESETPROP := true
 TW_INCLUDE_REPACKTOOLS := true
