@@ -186,7 +186,7 @@ TW_INCLUDE_NTFS_3G := true
 TW_INCLUDE_FUSE_EXFAT := true
 TW_INCLUDE_FUSE_NTFS := true
 TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
-TW_BATTERY_SYSFS_PATH := "/sys/class/power_supply/battery"
+TW_CUSTOM_BATTERY_PATH := "/sys/class/power_supply/battery"
 TW_CUSTOM_CPU_TEMP_PATH := /sys/devices/virtual/thermal/thermal_zone3/temp
 TW_MAX_BRIGHTNESS := 2047
 TW_DEFAULT_BRIGHTNESS := 1200
@@ -196,16 +196,15 @@ TW_INCLUDE_LOGICAL := my_product my_engineering my_company my_carrier my_region 
 TARGET_USES_MKE2FS := true
 TW_USE_TOOLBOX:= true
 TW_OZIP_DECRYPT_KEY := 0000
-# TW_Y_OFFSET := -50
-# TW_H_OFFSET := -50
+TW_Y_OFFSET := 50
+TW_H_OFFSET := -50
 TW_NO_HAPTICS := false
 TW_FRAMERATE := 60
 TW_OVERRIDE_SYSTEM_PROPS := \
     "ro.build.product"
 TW_INCLUDE_LIBRESETPROP := true
 TW_MAINTAINER := Badmaneers
-TW_DEVICE_VERSION := _even
-TW_DEFAULT_TIME_ZONE := "Asia/Kolkata"
+TW_DEVICE_VERSION := even
 
 
 # resetprop and magiskboot
