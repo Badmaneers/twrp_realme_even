@@ -177,6 +177,8 @@ TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 
 # TWRP specific build flags
 TW_THEME := portrait_hdpi
+TW_SCREEN_HEIGHT := 1600
+TW_SCREEN_WIDTH := 720
 RECOVERY_SDCARD_ON_DATA := true
 TW_EXCLUDE_DEFAULT_USB_INIT := true
 TW_EXTRA_LANGUAGES := true
@@ -194,7 +196,7 @@ TW_INCLUDE_LOGICAL := my_product my_engineering my_company my_carrier my_region 
 TARGET_USES_MKE2FS := true
 TW_USE_TOOLBOX:= true
 TW_OZIP_DECRYPT_KEY := 0000
-TW_Y_OFFSET := 100
+# TW_Y_OFFSET := -50
 # TW_H_OFFSET := -50
 TW_NO_HAPTICS := false
 TW_FRAMERATE := 60
@@ -202,7 +204,10 @@ TW_OVERRIDE_SYSTEM_PROPS := \
     "ro.build.product"
 TW_INCLUDE_LIBRESETPROP := true
 TW_MAINTAINER := Badmaneers
-TW_DEVICE_VERSION := "Welcome to TWRP by Badmaneers!"
+TW_DEVICE_VERSION := Even
+TW_DEFAULT_TIME_ZONE := "Asia/Kolkata"
+
+
 # resetprop and magiskboot
 TW_INCLUDE_RESETPROP := true
 TW_INCLUDE_REPACKTOOLS := true
