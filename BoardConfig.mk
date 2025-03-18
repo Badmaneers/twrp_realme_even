@@ -199,6 +199,7 @@ TW_FRAMERATE := 60
 TW_OVERRIDE_SYSTEM_PROPS := \
     "ro.build.product"
 TW_INCLUDE_LIBRESETPROP := true
+TW_MAINTAINER := Badmaneers
 TW_DEVICE_VERSION := "Welcome to TWRP by Badmaneers!"
 # resetprop and magiskboot
 TW_INCLUDE_RESETPROP := true
