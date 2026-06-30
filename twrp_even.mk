@@ -26,9 +26,6 @@ $(call inherit-product, vendor/twrp/config/common.mk)
 
 PRODUCT_DEVICE := even
 PRODUCT_NAME := twrp_even
-PRODUCT_BRAND := realme
-PRODUCT_MODEL := Realme c25
-PRODUCT_MANUFACTURER := realme
 
 # Dynamic
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
