@@ -41,3 +41,5 @@ PRODUCT_PACKAGES += \
 PRODUCT_SYSTEM_PROPERTY_BLACKLIST := \
     ro.product.device \
     ro.product.name
+
+$(call soong_config_set,libinit,vendor_init_lib,//$(LOCAL_PATH):libinit_even)
