@@ -109,6 +109,7 @@ BOARD_PRODUCTIMAGE_FILE_SYSTEM_TYPE := erofs
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := erofs
 BOARD_USERDATAIMAGE_FILE_SYSTEM_TYPE := f2fs
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
+BOARD_SUPPRESS_SECURE_ERASE := true
 
 # For Gsi's partition
 BOARD_SYSTEMIMAGE_PARTITION_RESERVED_SIZE := 1073741824
@@ -137,27 +138,14 @@ TARGET_COPY_OUT_ODM_DLKM := odm_dlkm
 BOARD_FLASH_BLOCK_SIZE := 131072
 BOARD_BOOTIMAGE_PARTITION_SIZE := 0x2000000
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 0x8000000
-BOARD_SYSTEMIMAGE_FILE_SYSTEM_TYPE := ext4
-TARGET_USERIMAGES_USE_F2FS := true
-
-# File systems
-BOARD_SYSTEMIMAGE_PARTITION_TYPE := ext4
-BOARD_USERDATAIMAGE_FILE_SYSTEM_TYPE := f2fs
-TARGET_USERIMAGES_USE_EXT4 := true
-TARGET_USERIMAGES_USE_F2FS := true
 
 # System as root
-BOARD_BUILD_SYSTEM_ROOT_IMAGE := false									  
-BOARD_SUPPRESS_SECURE_ERASE := true
-
-# Workaround for error copying vendor files to recovery ramdisk
-BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
-TARGET_COPY_OUT_VENDOR := vendor
+BOARD_BUILD_SYSTEM_ROOT_IMAGE := false
 
 
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
-BOARD_ROOT_EXTRA_FOLDERS += metadata my_bigball my_carrier my_company my_engineering my_heytap my_manifest my_preload my_product my_region my_stock my_version 
+BOARD_ROOT_EXTRA_FOLDERS += metadata my_bigball my_carrier my_company my_engineering my_heytap my_manifest my_preload my_product my_region my_stock my_version
 
 # Hack: prevent anti rollback
 PLATFORM_SECURITY_PATCH := 2099-12-31
@@ -167,13 +155,10 @@ PLATFORM_VERSION_LAST_STABLE := $(PLATFORM_VERSION)
 TW_INCLUDE_CRYPTO := true
 TW_INCLUDE_CRYPTO_FBE := true
 TW_INCLUDE_FBE_METADATA_DECRYPT := true
-BOARD_USES_METADATA_PARTITION := true
-BOARD_ROOT_EXTRA_FOLDERS += metadata
 
 # Recovery
 TARGET_RECOVERY_DEVICE_MODULES := libinit_even
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/system/etc/recovery.fstab
-BOARD_HAS_LARGE_FILESYSTEM := true
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 
 # TWRP specific build flags
