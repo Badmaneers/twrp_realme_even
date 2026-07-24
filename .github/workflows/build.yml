@@ -113,12 +113,6 @@ jobs:
         git clone ${{ github.server_url }}/${{ github.repository }} -b ${{ github.ref_name }} ./device/realme/even
       working-directory: ${{ steps.pwd.outputs.workspace-folder }}
 
-    - name: Clone kernel tree
-      run: |
-        rm -rf kernel/realme/even
-        git clone --recurse-submodules https://github.com/Badmaneers/zenium_realme_even --depth=1 kernel/realme/even
-      working-directory: ${{ steps.pwd.outputs.workspace-folder }}
-
     - name: Check Build Tree
       uses: haya14busa/action-cond@v1
       id: buildtree
